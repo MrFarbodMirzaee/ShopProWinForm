@@ -223,10 +223,10 @@ public partial class ProductForm : Form
         NameTextBox.Text = string.Empty;
         CountTextBox.Text = string.Empty;
         PriceTextBox.Text = string.Empty;
-        ProductPictureBox = null;
         BrandTextBox.Text = string.Empty;
         SpecificationTextBox.Text = string.Empty;
         IsActiveRadioButton.Checked = false;
+        ProductPictureBox.Image.Dispose();
     }
 
     private void NameTextBox_KeyPress(object sender, KeyPressEventArgs e)
